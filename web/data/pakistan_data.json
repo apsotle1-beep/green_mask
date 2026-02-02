@@ -1,0 +1,105 @@
+[
+    {
+        "city": "Karachi",
+        "areas": [
+            "Clifton",
+            "Defence",
+            "Gulshan-e-Iqbal",
+            "Gulistan-e-Jauhar",
+            "North Nazimabad",
+            "Saddar",
+            "PECHS",
+            "Malir",
+            "Korangi",
+            "Bahria Town"
+        ]
+    },
+    {
+        "city": "Lahore",
+        "areas": [
+            "Gulberg",
+            "DHA",
+            "Model Town",
+            "Johar Town",
+            "Wapda Town",
+            "Township",
+            "Garden Town",
+            "Bahria Town",
+            "Cantt"
+        ]
+    },
+    {
+        "city": "Islamabad",
+        "areas": [
+            "F-6",
+            "F-7",
+            "F-8",
+            "F-10",
+            "F-11",
+            "G-6",
+            "G-7",
+            "G-8",
+            "G-9",
+            "G-10",
+            "G-11",
+            "I-8",
+            "I-9",
+            "I-10",
+            "Bahria Enclave",
+            "DHA"
+        ]
+    },
+    {
+        "city": "Rawalpindi",
+        "areas": [
+            "Satellite Town",
+            "Bahria Town",
+            "Saddar",
+            "Westridge",
+            "Scheme 3",
+            "Chaklala Scheme 3",
+            "Gulraiz"
+        ]
+    },
+    {
+        "city": "Faisalabad",
+        "areas": [
+            "D Ground",
+            "Madina Town",
+            "Gulberg",
+            "Peoples Colony",
+            "Batala Colony",
+            "Sargodha Road"
+        ]
+    },
+    {
+        "city": "Peshawar",
+        "areas": [
+            "Hayatabad",
+            "University Town",
+            "Saddar",
+            "Gulbahar",
+            "DHA"
+        ]
+    },
+    {
+        "city": "Quetta",
+        "areas": [
+            "Jinnah Town",
+            "Shahbaz Town",
+            "Saddar",
+            "Model Town",
+            "Smungli Road"
+        ]
+    },
+    {
+        "city": "Multan",
+        "areas": [
+            "Gulgasht Colony",
+            "Model Town",
+            "DHA",
+            "Bosan Road",
+            "Cantt"
+        ]
+    }
+]
