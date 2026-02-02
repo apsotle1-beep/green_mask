@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Section = ({
     className,
@@ -22,7 +23,7 @@ export default function ScrollSections() {
     return (
         <div className="relative z-10 w-full pointer-events-none">
             {/* 0-15% Hero */}
-            <div className="h-[100vh] flex items-center justify-center text-center">
+            <div id="overview" className="h-[100vh] flex items-center justify-center text-center">
                 <div className="max-w-3xl space-y-6">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
@@ -47,7 +48,7 @@ export default function ScrollSections() {
             <div className="h-[50vh]" />
 
             {/* 15-40% Mechanism */}
-            <div className="h-[120vh] flex items-center">
+            <div id="benefits" className="h-[120vh] flex items-center">
                 <div className="max-w-xl pl-6 md:pl-20">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
@@ -66,7 +67,7 @@ export default function ScrollSections() {
             </div>
 
             {/* 40-65% Formula Explosion */}
-            <div className="h-[150vh] flex items-center justify-end">
+            <div id="formula" className="h-[150vh] flex items-center justify-end">
                 <div className="max-w-xl pr-6 md:pr-20 text-right">
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}
@@ -86,7 +87,7 @@ export default function ScrollSections() {
             </div>
 
             {/* 65-85% Texture */}
-            <div className="h-[120vh] flex items-center">
+            <div id="reviews" className="h-[120vh] flex items-center">
                 <div className="max-w-xl pl-6 md:pl-20">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -115,9 +116,9 @@ export default function ScrollSections() {
                         <h2 className="text-3xl font-medium text-white mb-2">Your new ritual awaits.</h2>
                         <h3 className="text-5xl font-bold text-white mb-6">Simple. Effective. Essential.</h3>
 
-                        <button className="bg-matcha text-botanic-deep font-bold text-xl px-12 py-4 rounded-full hover:scale-105 transition-transform duration-300 shadow-[0_0_30px_rgba(150,201,61,0.4)]">
+                        <Link href="/buy" className="bg-matcha text-botanic-deep font-bold text-xl px-12 py-4 rounded-full hover:scale-105 transition-transform duration-300 shadow-[0_0_30px_rgba(150,201,61,0.4)] inline-block">
                             Shop Green Mask Stick
-                        </button>
+                        </Link>
                         <p className="mt-4 text-sm text-white/40">Free shipping on all orders over $50</p>
                     </motion.div>
                 </div>
