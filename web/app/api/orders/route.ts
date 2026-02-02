@@ -10,10 +10,8 @@ export async function GET() {
         return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const orders = getOrders();
-    // Sort by newest first
-    const sortedOrders = orders.sort((a, b) => new Date(b.submittedAt).getTime() - new Date(a.submittedAt).getTime());
-    return NextResponse.json(sortedOrders);
+    const orders = await getOrders();
+    return NextResponse.json(orders);
 }
 
 export async function POST(request: Request) {
@@ -26,7 +24,7 @@ export async function POST(request: Request) {
             return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
         }
 
-        const newOrder = addOrder({
+        const newOrder = await addOrder({
             orderId,
             name,
             email,
@@ -39,6 +37,10 @@ export async function POST(request: Request) {
             quantity,
             submittedAt
         });
+
+        if (!newOrder) {
+            return NextResponse.json({ error: 'Failed to save order' }, { status: 500 });
+        }
 
         // Trigger Webhook for New Order
         try {
