@@ -119,7 +119,7 @@ export default function ScrollSections() {
                         <Link href="/buy" className="bg-matcha text-botanic-deep font-bold text-xl px-12 py-4 rounded-full hover:scale-105 transition-transform duration-300 shadow-[0_0_30px_rgba(150,201,61,0.4)] inline-block">
                             Shop Green Mask Stick
                         </Link>
-                        <p className="mt-4 text-sm text-white/40">Free shipping on all orders over $50</p>
+                        <p className="mt-4 text-sm text-white/40">Cash on Delivery Only • 7 Day Return Policy</p>
                     </motion.div>
                 </div>
             </div>

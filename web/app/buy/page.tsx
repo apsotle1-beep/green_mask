@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import ProductCarousel from "@/components/ProductCarousel";
 import Accordion from "@/components/Accordion";
 import BuyForm from "@/components/BuyForm";
+
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
@@ -71,9 +72,9 @@ export default function BuyPage() {
                                 Green Mask Stick<span className="text-lg align-top ml-1">TM</span>
                             </h1>
                             <div className="flex items-center gap-4">
-                                <span className="text-3xl font-light text-matcha">$30.00</span>
+                                <span className="text-3xl font-light text-matcha">PKR 720</span>
                                 <span className="px-3 py-1 text-xs font-medium uppercase tracking-wider bg-white/10 rounded-full text-white/70">
-                                    Free Shipping
+                                    Cash on Delivery Only
                                 </span>
                             </div>
                             <p className="text-lg text-white/70 leading-relaxed max-w-lg">
@@ -112,7 +113,7 @@ export default function BuyPage() {
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
                                     <path fillRule="evenodd" d="M10 2a.75.75 0 01.75.75v12.59l1.95-1.95a.75.75 0 111.06 1.06l-3.25 3.25a.75.75 0 01-1.06 0l-3.25-3.25a.75.75 0 111.06-1.06l1.95 1.95V2.75A.75.75 0 0110 2z" clipRule="evenodd" />
                                 </svg>
-                                <span>30-Day Money Back Guarantee</span>
+                                <span>7 Day Return Policy</span>
                             </div>
                         </div>
 
@@ -143,6 +144,9 @@ export default function BuyPage() {
                     </motion.div>
                 </div>
             </div>
+
+            {/* Voice Assistant */}
+
         </main>
     );
 }

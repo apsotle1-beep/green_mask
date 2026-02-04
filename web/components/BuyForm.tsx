@@ -165,13 +165,13 @@ export default function BuyForm({ onClose, quantity }: BuyFormProps) {
                         </div>
                         <div>
                             <p className="font-bold text-gray-800">Green Mask Stick™</p>
-                            <p className="text-sm text-gray-500">$30.00 x {formData.quantity}</p>
+                            <p className="text-sm text-gray-500">PKR 720 x {formData.quantity}</p>
                         </div>
                     </div>
 
                     <div className="text-right">
                         <p className="text-sm text-gray-500">Total</p>
-                        <p className="text-xl font-bold text-matcha">${(30 * formData.quantity).toFixed(2)}</p>
+                        <p className="text-xl font-bold text-matcha">PKR {(720 * formData.quantity).toLocaleString()}</p>
                     </div>
                 </div>
 
